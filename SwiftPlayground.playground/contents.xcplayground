@@ -1,13 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
-    <pages>
-        <page name='L1_ClassesAndObjects'/>
-        <page name='L2_Initialisers'/>
-        <page name='L3_Enums'/>
-        <page name='L3_SwitchStatement'/>
-        <page name='L3_ForLoops'/>
-        <page name='L4_ Tuples'/>
-        <page name='L5_Arrays'/>
-        <page name='L6_Dictionaries'/>
-    </pages>
-</playground>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'/>

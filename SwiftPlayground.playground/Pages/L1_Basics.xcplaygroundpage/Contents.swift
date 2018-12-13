@@ -1,60 +1,99 @@
-import Foundation
+/*:
+ ## Constants and Variables
+ #### Constants and variables must be declared before they’re used. You declare constants with the let keyword and variables with the var keyword.
+ */
 
-enum GroupType {
-    case L1
-    case L2
-    case L3
+let constantVal = 10, constantVal2 = "String Value", constantVal3 = 13.0
+var variableVal = 20,  variableVal1 = 21, variableVal2 = 22
+
+variableVal = 10
+
+
+
+/*:
+ ## Type Annotations
+ #### You can provide a type annotation when you declare a constant or variable, to be clear about the kind of values the constant or variable can store.
+ */
+let constantValAnnotation: String = "10", constantValAnnotation1: String = "10"
+
+
+let val1 = 12.0, value2 = 13.0 , val3: Double = 10.0
+
+
+/*:
+ ## Printing Constants and Variables
+*/
+
+print(" Printing constants and variables")
+print(" Printing Value  One = \(val1)")
+
+
+
+
+//: Naming Constants and Variables
+
+let 👀 = "cat eye"
+print("Value = \(👀)")
+
+let 👀👀 = "Double eye"
+print("Double value = \(👀👀)")
+
+
+//: Comment
+
+/*
+ Single line comment
+
+ /* Nested comment */
+*/
+
+//: Semicolons
+
+let myVal = "Sring value"
+print("\(myVal)")
+
+
+//: Swift Typealias
+
+typealias StudentName = String
+
+let student1: StudentName = "Nagaraj"
+print(student1)
+
+
+
+//: Booleans
+
+let abhilashIsAGoodPlayer = true
+
+if abhilashIsAGoodPlayer {
+    print("He is considered as a good player")
+} else {
+    print("He is not considered as a good player")
+
 }
 
-class Person {
 
-    /* Stored Properties */
-    var age: Int = 1
-    var name: String = "Person"
-    var group = .L1 as GroupType
-
-    /* Designated initialiser */
-    init() {
-
-    }
-
-    /* Convenience initialiser */
-    convenience init(age: Int, name: String) {
-        self.init()
-        self.age = age
-        self.name = name
-
-    }
-
-    convenience init(group:GroupType) {
-        self.init()
-        self.group = group
-    }
-
-    func run() {
-        print("\(self.name) is running")
-    }
-}
+//: Tuples
 
 
-let abhilash = Person()
-abhilash.age
-abhilash.name
-abhilash.group
-abhilash.run()
+var studentInfo = (name: "ABHI", age: 29, _:"Group B")
+studentInfo.0
+studentInfo.1
+studentInfo.2
+
+studentInfo.name = "changed name"
+studentInfo.age
+studentInfo.2
 
 
-let abhilash2 = Person(age: 12, name: "Abhi")
-abhilash2.age
-abhilash2.name
-abhilash2.run()
+//: Optionals
+
+var giftBox: Int? = 100
+
+print("Money in my gift box = \(giftBox!)")
 
 
-
-let nagarajGanesh = Person(group: .L2)
-nagarajGanesh.age
-nagarajGanesh.name
-nagarajGanesh.group
 
 
 
