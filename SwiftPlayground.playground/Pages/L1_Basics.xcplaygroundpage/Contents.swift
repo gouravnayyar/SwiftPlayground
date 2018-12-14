@@ -95,6 +95,79 @@ print("Money in my gift box = \(giftBox!)")
 
 
 
+// How optionals are declared
+
+
+
+
+// Assignment works in optionals
+
+// Force unwrapping
+
+let myOptionalValue: Int? = 100
+
+//let result :Int = myOptionalValue!
+//print(result)
+
+
+
+
+
+// Use of If let & guard
+
+if let optionalValue1 = myOptionalValue {
+    print("Value \(optionalValue1) is present")
+} else {
+    print("value is missing")
+}
+
+
+
+
+
+func myFunc(val1: Int?) -> Int {
+
+    var variableOne: Int?
+    var variableTwo: Int?
+
+    guard let variableOne = variableOne else {
+        return 0
+    }
+    
+
+    return 1
+}
+
+
+
+/*
+
+ if (!firstname) {
+ }
+ if (!lastname) {
+ }
+
+
+ firstName
+ Last Name
+ Email id
+
+
+
+ optional info: Address
+
+
+
+
+ */
+
+
+
+
+
+
+
+
 
 
 
